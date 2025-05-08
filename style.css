@@ -199,7 +199,7 @@ p{
   }
   
 /*galeri html*/
-  .tombol-kembali {
+ .tombol-kembali {
     /* Gaya yang sudah ada */
     display: inline-block;
     background-color: red;
@@ -209,6 +209,8 @@ p{
     text-decoration: none;
     margin-bottom: 20px; /* Mungkin tidak diperlukan lagi dengan position: fixed */
     transition: background-color 0.3s;
+  
+    /* Posisi baru */
     position: fixed;
     bottom: 20px; 
     left: 50%; /* Posisi tengah horizontal */
