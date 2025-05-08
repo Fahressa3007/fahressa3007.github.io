@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left_side{
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+}
+.profileTeks{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileTeks .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileTeks .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileTeks h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileTeks h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contentInfo{
+    padding-top: 40px;
+
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contentInfo ul{
+    position: relative;
+}
+.contentInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contentInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contentInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.contentInfo.education li{
+    margin-bottom: 15px;
+}
+.contentInfo.education h5{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contentInfo.education h4{
+    color: #fff;
+    font-weight: 500;
+}
+.contentInfo.projek .skala {
+    display: block;
+    height: 8px;
+    background: #0d2b38; 
+    margin-top: 5px;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .contentInfo.projek .skala div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+  }
+  
+
+.container .right_side{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+} 
+p{
+    color: #333;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .tahun_pengalaman{
+    min-width: 150px;
+
+}
+.about .box .tahun_pengalaman h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+.about .box .tulisan h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+.hobi ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    padding: 0;
+  }
+  
+  .hobi ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-size: 16px;
+  }
+  .tombol-merah {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .tombol-merah:hover {
+    background-color: darkred;
+  }
+  
+/*galeri html*/
+  .galeri-container {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tombol-kembali {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .tombol-kembali:hover {
+    background-color: #555;
+  }
+  
+  .galeri-konten {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px dashed #aaa;
+    text-align: center;
+  }
+
+
+  .galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+  }
+  
+  .galeri-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .galeri-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  
