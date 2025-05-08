@@ -199,20 +199,21 @@ p{
   }
   
 /*galeri html*/
-  .galeri-container {
-    padding: 30px;
-    font-family: Arial, sans-serif;
-  }
-  
   .tombol-kembali {
+    /* Gaya yang sudah ada */
     display: inline-block;
     background-color: red;
     color: white;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Mungkin tidak diperlukan lagi dengan position: fixed */
     transition: background-color 0.3s;
+    position: fixed;
+    bottom: 20px; 
+    left: 50%; /* Posisi tengah horizontal */
+    transform: translateX(-50%); 
+    z-index: 10; /* Memastikan tombol berada di atas konten lain jika perlu */
   }
   
   .tombol-kembali:hover {
@@ -226,12 +227,11 @@ p{
     text-align: center;
   }
 
-
   .galeri-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-    margin-top: 20px;
+    gap: 50px;
+    margin-top: 2px;
   }
   
   .galeri-grid img {
