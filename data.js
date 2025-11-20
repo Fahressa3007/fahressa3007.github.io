@@ -653,4 +653,5 @@ export const budayaData = [
             }
         ]
     }
+
 ];
