@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo/icon.png" type="image/png">
+    <title>Budaya Jawa Timur - Jelajahi Kekayaan Budaya</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./logo/Provinsi Jawa Timur.jpg" alt="Logo Provinsi Jawa Timur" class="logo-provinsi">
+                <span class="logo-text">Budaya Jatim</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Beranda</a></li>
+                <li><a href="#budaya" class="nav-link">Budaya</a></li>
+                <li><a href="#tentang" class="nav-link">Tentang</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <img src="./pemandangan/pesona gunung bromo.jpg" alt="Gunung Bromo" class="slide-bg">
+                <div class="hero-content">
+                    <h1 class="hero-title">Pesona Gunung Bromo</h1>
+                    <p class="hero-subtitle">Saksikan keindahan matahari terbit dan lautan pasir di gunung berapi paling ikonik.</p>
+                </div>
+            </div>
+
+            <div class="hero-slide">
+                <img src="./pemandangan/Api Biru Kawah Ijen.jpg" alt="Kawah Ijen" class="slide-bg">
+                <div class="hero-content">
+                    <h1 class="hero-title">Api Biru Kawah Ijen</h1>
+                    <p class="hero-subtitle">Fenomena langka blue fire dan danau kawah asam terbesar di dunia yang memukau.</p>
+                </div>
+            </div>
+
+            <div class="hero-slide">
+                <img src="./pemandangan/Air Terjun Tumpak Sewu.jpg" alt="Tumpak Sewu" class="slide-bg">
+                <div class="hero-content">
+                    <h1 class="hero-title">Air Terjun Tumpak Sewu</h1>
+                    <p class="hero-subtitle">Serpihan surga tersembunyi di Lumajang, dikenal sebagai Niagara-nya Indonesia.</p>
+                </div>
+            </div>
+            
+            <div class="hero-overlay"></div>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="container">
+            <h2 class="section-title">Jelajahi Kekayaan Budaya Jawa Timur</h2>
+            <p class="section-subtitle" style="margin-bottom: 40px;">Temukan tradisi unik dari berbagai kota</p>
+            
+            <div class="search-container">
+                <div class="search-icon">🔍</div>
+                <input type="text" id="searchInput" class="search-input" 
+                       placeholder="Cari budaya berdasarkan kota atau jenis budaya...">
+                <button id="clearSearch" class="clear-btn">✕</button>
+            </div>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+    </section>
+
+    <section class="culture-section" id="budaya">
+        <div class="container">
+            <div class="culture-header">
+                <div class="header-text">
+                    <h2 class="section-title text-left">Budaya Kota di Jawa Timur</h2>
+                    <p class="section-subtitle text-left">Geser untuk menjelajahi budaya dari berbagai kota</p>
+                </div>
+            </div>
+            
+            <div class="slider-wrapper">
+                <button class="nav-btn floating-btn prev-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="slider-container" id="sliderContainer">
+                    </div>
+                
+                <button class="nav-btn floating-btn next-btn" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+    
+    <section class="about-section" id="tentang">
+        <div class="container">
+            <h2 class="section-title">Tentang Budaya Jawa Timur</h2>
+            <div class="about-description">
+                <p>Website Budaya Jawa Timur adalah platform digital yang didedikasikan untuk memperkenalkan dan melestarikan kekayaan budaya dari 38 kabupaten/kota di Jawa Timur. Kami menghadirkan informasi lengkap tentang berbagai kesenian tradisional, mulai dari tarian, musik, teater, hingga upacara adat yang menjadi warisan leluhur.</p>
+                <p>Jawa Timur memiliki keragaman budaya yang luar biasa, dari Ludruk Surabaya yang jenaka, Reog Ponorogo yang megah, Gandrung Banyuwangi yang anggun, hingga berbagai kesenian lokal lainnya. Setiap kota memiliki identitas budaya yang unik dan menarik untuk dijelajahi.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Budaya Jatim</h3>
+                    <p>Melestarikan dan memperkenalkan kekayaan budaya Jawa Timur kepada dunia.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>Email: ello.dava32@smk.belajar.id</p>
+                    <p>Email: fahressabrian85@gmail.com</p>
+                    <p>Telp: 085704583504</p>
+                    <p>Telp: 085850335303</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/nath___30/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i> Fahressa
+                        </a>
+                        <a href="https://www.instagram.com/ellodava_/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i> Ello
+                        </a>
+                        <a href="https://www.tiktok.com/@nath_nh" target="_blank" class="social-link">
+                            <i class="fab fa-tiktok"></i> Fahressa
+                        </a>
+                         <a href="https://www.tiktok.com/@ello_dva" target="_blank" class="social-link">
+                            <i class="fab fa-tiktok"></i> Ello
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; bennet racing</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content" id="modalContent">
+        </div>
+    </div>
+
+    <script type="module" src="./data.js"></script>
+    <script type="module" src="./script.js"></script>
+
+</body>
+</html>
