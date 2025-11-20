@@ -100,7 +100,7 @@ function highlightCard(id) {
     }
 }
 
-// === SLIDER BUDAYA (FIXED LOGO HANDLER) ===
+// === SLIDER BUDAYA (FIXED IMAGE HANDLING) ===
 const sliderContainer = document.getElementById('sliderContainer');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
@@ -115,21 +115,23 @@ function populateSlider() {
     if(!sliderContainer) return;
 
     const cardsHtml = budayaData.map((item, index) => {
-        // Fallback untuk background cover
-        const coverImg = item.foto_bg ? item.foto_bg : `https://picsum.photos/500/400?random=${item.id}`;
+        // Gunakan Picsum sebagai fallback jika foto_bg kosong
+        const bgImage = item.foto_bg ? item.foto_bg : `https://picsum.photos/500/600?random=${item.id}`;
+        // Gunakan Placeholder jika Logo kosong
+        const logoImage = item.image ? item.image : 'https://via.placeholder.com/100?text=Logo';
 
         return `
         <div class="culture-card" data-id="${item.id}" style="--i: ${index}">
             
             <div class="card-header-img">
-                <img src="${coverImg}" 
+                <img src="${bgImage}" 
                      alt="${item.daerah}" 
                      class="card-cover-img"
                      onerror="this.src='https://via.placeholder.com/500x300?text=No+Image'">
             </div>
 
             <div class="card-floating-logo">
-                <img src="${item.image}" 
+                <img src="${logoImage}" 
                      alt="Logo ${item.kota}" 
                      onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'%3E%3Crect width=\'100\' height=\'100\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'50\' y=\'55\' font-family=\'Arial\' font-size=\'20\' fill=\'%23999\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3ELogo%3C/text%3E%3C/svg%3E'">
             </div>
@@ -244,7 +246,7 @@ if(sliderContainer) {
     });
 }
 
-// === MODAL LOGIC ===
+// === MODAL LOGIC (PREMIUM) ===
 const modalOverlay = document.getElementById('modalOverlay');
 const modalContent = document.getElementById('modalContent');
 
@@ -277,6 +279,7 @@ function showDetailView(id) {
         `;
     }
 
+    // Gunakan foto_bg jika ada, jika tidak pakai Picsum
     const headerImage = item.foto_bg ? item.foto_bg : `https://picsum.photos/800/400?random=${item.id}`;
 
     modalContent.innerHTML = `
@@ -293,6 +296,7 @@ function showDetailView(id) {
             <p class="modal-desc-main">
                 ${item.deskripsi_kota}
             </p>
+            
             ${highlightsHtml}
         </div>
     `;
