@@ -201,7 +201,7 @@ export const budayaData = [
         jenis: "Budaya",
         deskripsi_kota: "yang dikenal juga sebagai Kota Santri karena banyaknya pesantren ternama, memiliki perpaduan budaya Jawa, Madura, Arab, dan Tionghoa yang kuat, terutama di wilayah pesisir.",
         url: "#",
-        image: "./logo/pasuruan.png", // Path ini sudah benar
+        foto_bg: "./foto_bg/Pasuruan.png", // Path ini sudah benar
         foto_bg: "./foto_bg/pasuruan.png",
         budaya_spesifik: [
             {
@@ -337,7 +337,7 @@ export const budayaData = [
         deskripsi_kota: "Nganjuk, sering dijuluki sebagai Kota Angin, adalah sebuah kabupaten di Jawa Timur yang memiliki kekayaan sejarah dan budaya Jawa Mataraman yang kuat, ditandai dengan tradisi adat Sedekah Bumi sebagai wujud syukur atas panen. Keunikan budaya Nganjuk terlihat pada kesenian rakyatnya seperti Tari Menthok-Menthok yang lucu dan tarian Jaranan Dorr yang bersemangat",
         url: "#",
         image: "./logo/nganjuk.png", // Path ini sudah benar
-        foto_bg: "./foto_bg/nganjuk.png",
+        foto_bg: "./foto_bg/Nganjuk.png",
         budaya_spesifik: [
             {
                 nama: "Nyadran Agung",
@@ -655,3 +655,4 @@ export const budayaData = [
     }
 
 ];
+
