@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icon.png" type="image/png">
+    <title>Budaya Jawa Timur - Jelajahi Kekayaan Budaya</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./Provinsi Jawa Timur.jpg" alt="Logo Provinsi Jawa Timur" class="logo-provinsi">
+                <span class="logo-text">Budaya Jatim</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Beranda</a></li>
+                <li><a href="#budaya" class="nav-link">Budaya</a></li>
+                <li><a href="#tentang" class="nav-link">Tentang</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Jelajahi Kekayaan Budaya Jawa Timur</h1>
+            <p class="hero-subtitle">Temukan keindahan tradisi dan warisan budaya dari setiap kota di Jawa Timur</p>
+        </div>
+        <div class="hero-decoration">
+            <div class="decoration-circle circle-1"></div>
+            <div class="decoration-circle circle-2"></div>
+            <div class="decoration-circle circle-3"></div>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-icon">🔍</div>
+                <input type="text" id="searchInput" class="search-input" 
+                       placeholder="Cari budaya berdasarkan kota atau jenis budaya...">
+                <button id="clearSearch" class="clear-btn">✕</button>
+            </div>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+    </section>
+
+    <section class="culture-section" id="budaya">
+        <div class="container">
+            <h2 class="section-title">Budaya Kota di Jawa Timur</h2>
+            <p class="section-subtitle">Geser untuk menjelajahi budaya dari berbagai kota</p>
+            
+            <div class="slider-wrapper">
+                <button class="slider-btn prev-btn" id="prevBtn">
+                    <span>‹</span>
+                </button>
+                
+                <div class="slider-container" id="sliderContainer">
+                    </div>
+                
+                <button class="slider-btn next-btn" id="nextBtn">
+                    <span>›</span>
+                </button>
+            </div>
+
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+    
+    <section class="about-section" id="tentang">
+        <div class="container">
+            <h2 class="section-title">Tentang Budaya Jawa Timur</h2>
+            <div class="about-description">
+                <p>Website Budaya Jawa Timur adalah platform digital yang didedikasikan untuk memperkenalkan dan melestarikan kekayaan budaya dari 38 kabupaten/kota di Jawa Timur. Kami menghadirkan informasi lengkap tentang berbagai kesenian tradisional, mulai dari tarian, musik, teater, hingga upacara adat yang menjadi warisan leluhur.</p>
+                <p>Jawa Timur memiliki keragaman budaya yang luar biasa, dari Ludruk Surabaya yang jenaka, Reog Ponorogo yang megah, Gandrung Banyuwangi yang anggun, hingga berbagai kesenian lokal lainnya. Setiap kota memiliki identitas budaya yang unik dan menarik untuk dijelajahi.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Budaya Jatim</h3>
+                    <p>Melestarikan dan memperkenalkan kekayaan budaya Jawa Timur kepada dunia.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>Email: ello.dava32@smk.belajar.id</p>
+                    <p>Email: fahressabrian85@gmail.com</p>
+                    <p>Telp: 085704583504</p>
+                    <p>Telp: 085850335303</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/nath___30/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"> fahressa </i>
+                        </a>
+                        <a href="https://www.instagram.com/ellodava_/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"> ello</i>
+                        </a>
+                        <a href="https://www.tiktok.com/@nath_nh" target="_blank" rel="noopener noreferrer" class="social-link" title="TikTok">
+                            <i class="fab fa-tiktok"> fahressa</i>
+                        </a>
+                         <a href="https://www.tiktok.com/@ello_dva" target="_blank" rel="noopener noreferrer" class="social-link" title="TikTok">
+                            <i class="fab fa-tiktok"> ello</i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Budaya Jawa Timur. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content" id="modalContent">
+            </div>
+    </div>
+
+    <script type="module" src="./data.js"></script>
+    <script type="module" src="./script.js"></script>
+
+</body>
+</html>
