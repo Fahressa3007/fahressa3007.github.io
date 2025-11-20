@@ -201,7 +201,7 @@ export const budayaData = [
         jenis: "Budaya",
         deskripsi_kota: "yang dikenal juga sebagai Kota Santri karena banyaknya pesantren ternama, memiliki perpaduan budaya Jawa, Madura, Arab, dan Tionghoa yang kuat, terutama di wilayah pesisir.",
         url: "#",
-        image: "./logo/pasuruan.png", // Path ini sudah benar
+        image: "./logo/pasuruhan.png", // Path ini sudah benar
         foto_bg: "./foto_bg/pasuruan.png",
         budaya_spesifik: [
             {
@@ -653,4 +653,5 @@ export const budayaData = [
             }
         ]
     }
+
 ];
